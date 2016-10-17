@@ -26,10 +26,16 @@ class TestTimeInterval(unittest.TestCase):
     	self.assertAlmostEqual(ti.getSeconds(), ti.getMinutes() * 60.0)
 
     def test3(self):
-    	ti = TimeInterval("1 hour, \t1 second, 2 miNutes, 5 seconds")
-    	self.assertAlmostEqual(ti.getHours(), 1.0 + 2.0 / 60.0 + 6.0/3600.0)
-    	self.assertAlmostEqual(ti.getMinutes(), ti.getHours() * 60.0)
-    	self.assertAlmostEqual(ti.getSeconds(), ti.getMinutes() * 60.0)
+        ti = TimeInterval("1 hour, \t1 second, 2 miNutes, 50 seconds")
+        self.assertAlmostEqual(ti.getHours(), 1.0 + 2.0 / 60.0 + 51.0/3600.0)
+        self.assertAlmostEqual(ti.getMinutes(), ti.getHours() * 60.0)
+        self.assertAlmostEqual(ti.getSeconds(), ti.getMinutes() * 60.0)
+
+    def test4(self):
+        ti = TimeInterval("100 hour, \t1 second, 2 miNutes, 50 seconds")
+        self.assertAlmostEqual(ti.getHours(), 100.0 + 2.0 / 60.0 + 51.0/3600.0)
+        self.assertAlmostEqual(ti.getMinutes(), ti.getHours() * 60.0)
+        self.assertAlmostEqual(ti.getSeconds(), ti.getMinutes() * 60.0)
 
 if __name__ == '__main__':
     unittest.main()
