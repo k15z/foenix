@@ -8,7 +8,9 @@ Date: October 14th, 2016
 # contain the date followed by the title; each news article should be on a new
 # line.
 # 
-# 10/16/2016 News Article Title 1
-# 10/17/2016 News Article Title 2
-# 10/17/2016 News Article Title 3
-# 10/18/2016 News Article Title 2
+# 03/03/2009 Crock Pot Apple Butter
+# 03/11/2009 Bad Apple: Five Classic Apple Marketing Tactics That Lock You In
+# 09/03/2010 Are You Really Savoring Your Apple? An Apple Meditation
+# 13/10/2010 Apple Jelly
+# 18/10/2010 Homemade Apple Cider
+# 08/03/2011 6 Unfair Market Advantages You Should Steal from Apple
