@@ -8,7 +8,7 @@ else:
     result = os.popen("python solution.py").read()
 
 result = result.strip().split('\n')
-expected = open('solution.txt', 'rt').read().strip().split('\n')
+expected = open('solution.txt', 'rt', encoding='utf-8').read().strip().split('\n')
 assert len(result) == len(expected)
 for i in range(len(result)):
 	sys.stdout.write('.')
